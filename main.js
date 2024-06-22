@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSPFA extras
 // @namespace    http://tampermonkey.net/
-// @version      1.15.4
+// @version      1.15.5
 // @description  Adds custom quality of life features to MSPFA.
 // @author       seymour schlong
 // @icon         https://mspfae.linkh.at/icon
@@ -16,12 +16,14 @@
 // @exclude      https://mspfa.com/css/*
 // @exclude      https://mspfa.com/rss/*
 // @grant        none
+// @downloadURL https://update.greasyfork.org/scripts/396798/MSPFA%20extras.user.js
+// @updateURL https://update.greasyfork.org/scripts/396798/MSPFA%20extras.meta.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    const currentVersion = "1.15.4";
+    const currentVersion = "1.15.5";
 
     let settings = {};
     let drafts = {};
@@ -720,11 +722,11 @@
         }
 
         // Dropdown menu and pixelated scaling
-        document.querySelector('head').appendChild(createElement('link', { id: 'script-css', type: 'text/css', rel: 'stylesheet', href: 'https://mspfae.linkh.at/style' }));
+        document.querySelector('head').appendChild(createElement('link', { id: 'script-css', type: 'text/css', rel: 'stylesheet', href: 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/mspfae.css' }));
 
         // new icons
         if (settings.newButtons) {
-            document.querySelector('head').appendChild(createElement('link', { id: 'button-css', type: 'text/css', rel: 'stylesheet', href: 'https://mspfae.linkh.at/buttonstyle' }));
+            document.querySelector('head').appendChild(createElement('link', { id: 'button-css', type: 'text/css', rel: 'stylesheet', href: 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/buttonreplacement.css' }));
         }
 
         const extraStyle = document.createElement('style');
@@ -1639,9 +1641,9 @@
                             // Append page number to message title
                             link = addLink(node.querySelector('.cellicon'), node.querySelectorAll('.spoiler a')[1].href + '#commentbox');
                             titleLink.textContent += ` (page ${/(?:.*?)&p=(\d{1,})(?:.*?)/.exec(link.href)[1]})`;
-                            node.querySelector('.cellicon').src = 'https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/comment.png';
+                            node.querySelector('.cellicon').src = 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/assets/comment.png';
                             if (node.textContent.includes('You were tagged on ')) {
-                                node.querySelector('.cellicon').src = 'https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/mention.png';
+                                node.querySelector('.cellicon').src = 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/assets/mention.png';
                             }
                             node.classList.add('msg-comment');
                         }
@@ -1805,7 +1807,7 @@
                         adventures.forEach(story => {
                             const storyTitle = story.querySelector('a.major');
                             const favSpan = createElement('span', { style: 'transform: translateX(-3px); float: right;' });
-                            const favHeart = createElement('img', { src: 'https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/heart.png', style: 'float: right;' });
+                            const favHeart = createElement('img', { src: 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/assets/heart.png', style: 'float: right;' });
 
                             let adv;
                             if (storyTitle.href) {
@@ -3292,7 +3294,7 @@
             pageLoad(() => {
                 if (window.MSPFA) {
                     const activityHeart = document.querySelector('#userstatus > img');
-                    activityHeart.src = `https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/${activityHeart.src.includes('gray') ? 'grayheart' : 'heartbeat'}.png`;
+                    activityHeart.src = `https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/assets/${activityHeart.src.includes('gray') ? 'grayheart' : 'heartbeat'}.png`;
 
                     const stats = document.querySelector('#userinfo table');
 
