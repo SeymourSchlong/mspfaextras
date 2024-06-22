@@ -1,5 +1,3 @@
-/*@import url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/alert.css");*/
-
 #notification {
     z-index: 2;
 }
@@ -51,7 +49,7 @@
 }
 
 #bbtoolbar input[type=button] {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/icons.png");
+    background-image: url("./assets/icons.png");
 }
 
 #details {
@@ -59,7 +57,7 @@
 }
 
 .reply {
-	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/reply.png");
+	background-image: url("./assets/reply.png");
 	background-size: contain;
 	background-position: center;
 	float: right;
@@ -154,10 +152,10 @@ table label {
 }
 
 .pencil {
-	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/edit_save.png");
+	background-image: url("./assets/edit_save.png");
 }
 .save {
-	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/save.png");
+	background-image: url("./assets/save.png");
 }
 
 
@@ -191,18 +189,18 @@ table label {
 
 
 .move-up {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/up.png");
+    background-image: url("./assets/up.png");
 }
 
 .move-down {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/down.png");
+    background-image: url("./assets/down.png");
 }
 
 .remove {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/remove.png");
+    background-image: url("./assets/remove.png");
 }
 .add {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/add.png");
+    background-image: url("./assets/add.png");
 }
 
 .editcolourcontainer {

@@ -1,7 +1,3 @@
-img[src="https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/Playground/wip.png"], img[src="https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/Playground/wip.png"] + br {
-    display: none;
-}
-
 input.major[value="+"], input.major[value="?"], input.major[value="x"], #taghide {
     font-size: 0px;
     width: 20px;
@@ -14,31 +10,31 @@ input.major:not([disabled]):active {
     background-position: 1px 1px;
 }
 input.major[value="+"] {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/add.png");
+    background-image: url("./assets/add.png");
 }
 #taghide, input.major[value="x"] {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/remove.png');
+    background-image: url('./assets/remove.png');
 }
 input.major[value="?"] {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/help.png');
+    background-image: url('./assets/help.png');
 }
 .rate button.up, .rate input[type="button"].up {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/like-gray.png');
+    background-image: url('./assets/like-gray.png');
 }
 .rate button.up.lit, .rate input[type="button"].up.lit {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/like.png');
+    background-image: url('./assets/like.png');
 }
 .rate button.down, .rate input[type="button"].down {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/dislike-gray.png');
+    background-image: url('./assets/dislike-gray.png');
 }
 .rate button.down.lit, .rate input[type="button"].down.lit {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/dislike.png');
+    background-image: url('./assets/dislike.png');
 }
 .reply {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/reply2.png') !important;
+    background-image: url('./assets/reply2.png') !important;
 }
 .gear {
-    background-image: url('https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/gear.png');
+    background-image: url('./assets/gear.png');
 }
 
 .rate input.major:active {
@@ -46,21 +42,21 @@ input.major[value="?"] {
 }
 
 .fav.unlit {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/grayheart.png");
+    background-image: url("./assets/grayheart.png");
 }
 .fav.lit {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/heart.png");
+    background-image: url("./assets/heart.png");
 }
 
 .notify.unlit {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/graybell.png");
+    background-image: url("./assets/graybell.png");
 }
 .notify.lit {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/bell.png");
+    background-image: url("./assets/bell.png");
 }
 
 .rss {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/rss.png");
+    background-image: url("./assets/rss.png");
 }
 
 input.major[value="▲"], input.major[value="▼"] {
@@ -72,16 +68,16 @@ input.major[value="▲"], input.major[value="▼"] {
     background-position: center;
 }
 input.major[value="▲"] {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/up.png");
+    background-image: url("./assets/up.png");
 }
 input.major[value="▼"] {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/down.png");
+    background-image: url("./assets/down.png");
 }
 input.major[value="▲"]:disabled {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/up-gray.png");
+    background-image: url("./assets/up-gray.png");
 }
 input.major[value="▼"]:disabled {
-    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/down-gray.png");
+    background-image: url("./assets/down-gray.png");
 }
 
 #storypages th > * {
