@@ -1,0 +1,256 @@
+/*@import url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/alert.css");*/
+
+#notification {
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: inherit;
+    padding: 2px;
+    text-decoration: underline;
+    display: block;
+    visibility: visible;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-size: 10px;
+}
+
+.dropdown-content a:hover {
+	background-color: #fff4;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	background-color: inherit;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: inherit;
+	position: absolute;
+	text-align: left;
+	min-width: 110px;
+	margin-left: -5px;
+	padding: 2px;
+	z-index: 1;
+}
+
+#dropdown-explore {
+	font-size: 11px;
+	width: 90%;
+	border: none;
+	border-radius: 3px;
+	margin: auto;
+	display: block;
+}
+
+.dropdown-content input {
+	margin-top: 1px !important;
+	margin-bottom: 1px !important;
+}
+
+#bbtoolbar input[type=button] {
+    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/icons.png");
+}
+
+#details {
+    font-weight: bold;
+}
+
+.reply {
+	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/reply.png");
+	background-size: contain;
+	background-position: center;
+	float: right;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	opacity: 0.5;
+}
+
+.reply:hover {
+	opacity: 1;
+}
+
+.pages {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAL1JREFUOI1jYKAQMCJzugoL/+NSePPhQ4a569YxoouzoAuU9vUx3AoLY1BbtYqBgYGB4d21a8jS/9ENwTBg/ezZDNpQGh2oy8szJAcFoRiCYUBgairDrd27Gdz9/Bh+vH2LInfn+nUMQ3G6YOemTRiKsQEMA9z9/Bie7N7NYG9tjaGYKBfs3LSJQZuBgeHg0aPkucDe2prhDSUuOHj06Ih3wdw5cxgYZGQYGObMId0FNx8+JKhBQlGRKIOJBgBpTFVYzRG//QAAAABJRU5ErkJggg==");
+}
+
+div#preload {
+    display: none;
+}
+
+table label {
+	user-select: none;
+	-moz-user-select: -moz-none;
+}
+
+#draft-table {
+    max-height: 250px;
+    overflow-y: scroll;
+    border: 1px solid grey;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#guides {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.messageCheckbox {
+	cursor: pointer;
+	padding-right: 16px;
+}
+.messageCheckbox > input {
+	cursor: pointer;
+}
+
+
+.msg-pm .messageCheckbox[style="border-left: 8px solid rgb(92, 174, 223);"], .msg-pm a.major {
+    border-color: #5db164 !important;
+    color: #5db164 !important;
+    text-shadow: 0 2px #155019;
+}
+
+.msg-comment .messageCheckbox[style="border-left: 8px solid rgb(92, 174, 223);"], .msg-comment a.major {
+    border-color: #e05252 !important;
+    color: #e05252 !important;
+    text-shadow: 0 2px #5a1414;
+}
+
+.msg-update .messageCheckbox[style="border-left: 8px solid rgb(92, 174, 223);"], .msg-update a.major {
+    border-color: #5caedf !important;
+    color: #5caedf;
+    text-shadow: 0 2px #2a6b7d;
+}
+
+#filter-container {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#filter-container input {
+    vertical-align: middle;
+}
+
+.iconbutton {
+    font-size: 0px;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+.pencil {
+	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/edit_save.png");
+}
+.save {
+	background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/save.png");
+}
+
+
+#coloursContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
+    width: 450px;
+}
+#coloursContainer .colourcategory {
+    text-align: right;
+}
+#coloursContainer > span {
+    width: calc(50% - 1ch);
+}
+
+.colourSpan .iconbutton.colourbutton, .editcolourcategory .iconbutton.colourbutton {
+    background-color: var(--colour) !important;
+    border-color: var(--colourA) var(--colourB) var(--colourB) var(--colourA) !important;
+    outline: none;
+}
+.colourbutton:active {
+    border-color: var(--colourB) var(--colourA) var(--colourA) var(--colourB) !important;
+}
+.colourbutton[type='color'] {
+    border-width: 2px;
+}
+
+
+.move-up {
+    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/up.png");
+}
+
+.move-down {
+    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/down.png");
+}
+
+.remove {
+    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/remove.png");
+}
+.add {
+    background-image: url("https://file.garden/W1K6HZQ1fV1iP3Sq/mspfa/MSPFA%20extras%20files/add.png");
+}
+
+.editcolourcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 1ch;
+}
+
+.editcolourcategory {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.editcolourscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0.5ch 0 0.5ch 20px;
+    gap: 5px;
+}
+
+.editcolourcontainer:not(:last-of-type) {
+    border-bottom: 2px solid gray;
+}
+
+#categoryandcolourlist {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#adventure-tags a {
+    color: #595959;
+}
+
+
+#storypages #bbtoolbar {
+    text-align: left;
+    margin-top: -26px;
+    margin-bottom: -3px;
+}
+
+
+footer .mspfalogo {
+    background-image: url("https://mspfa.com/images/footer/random.njs");
+}
