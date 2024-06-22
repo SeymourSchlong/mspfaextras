@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         MSPFA extras
 // @namespace    http://tampermonkey.net/
-// @version      1.15.5
+// @version      1.15.5.1
 // @description  Adds custom quality of life features to MSPFA.
 // @author       seymour schlong
-// @icon         https://mspfae.linkh.at/icon
-// @icon64       https://mspfae.linkh.at/icon
+// @icon         https://github.com/SeymourSchlong/mspfaextras/blob/main/assets/ico.png?raw=true
+// @icon64       https://github.com/SeymourSchlong/mspfaextras/blob/main/assets/ico.png?raw=true
 // @match        https://mspfa.com/
 // @match        https://mspfa.com/?*
 // @match        https://mspfa.com/*/
@@ -23,7 +23,7 @@
 (function() {
     'use strict';
 
-    const currentVersion = "1.15.5";
+    const currentVersion = "1.15.5.1";
 
     let settings = {};
     let drafts = {};
@@ -722,11 +722,11 @@
         }
 
         // Dropdown menu and pixelated scaling
-        document.querySelector('head').appendChild(createElement('link', { id: 'script-css', type: 'text/css', rel: 'stylesheet', href: 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/mspfae.css' }));
+        document.querySelector('head').appendChild(createElement('link', { id: 'script-css', type: 'text/css', rel: 'stylesheet', href: 'https://seymourschlong.github.io/mspfaextras/mspfae.css' }));
 
         // new icons
         if (settings.newButtons) {
-            document.querySelector('head').appendChild(createElement('link', { id: 'button-css', type: 'text/css', rel: 'stylesheet', href: 'https://raw.githubusercontent.com/SeymourSchlong/mspfaextras/main/buttonreplacement.css' }));
+            document.querySelector('head').appendChild(createElement('link', { id: 'button-css', type: 'text/css', rel: 'stylesheet', href: 'https://seymourschlong.github.io/mspfaextras/buttonreplacement.css' }));
         }
 
         const extraStyle = document.createElement('style');
